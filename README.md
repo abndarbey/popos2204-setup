@@ -4,7 +4,7 @@
 
 #### *Step 1 - Install*
 ```bash
-$ curl -sLk https://git.io/gobrew | sh -
+curl -sLk https://git.io/gobrew | sh -
 ```
 
 #### *Step 2 - Set Path in `.bashrc` or `.profile` file*
@@ -14,9 +14,58 @@ export PATH="$HOME/.gobrew/current/bin:$HOME/.gobrew/bin:$PATH"
 
 #### *Step 3 - Use gobrew commands to setup specific version of go*
 ```bash
-gobrew ls-remote
-gobrew use 1.16
-gobrew ls
-gobrew uninstall 1.16
-go version
+gobrew help
+gobrew ls-remote # list all the available remote versions of go for installation
+gobrew use 1.16 # install and set a specific version of go
+gobrew install 1.16 # install a specific version of go
+gobrew ls # list all the available versions of go in the system
+gobrew uninstall 1.16 # uninstall a specific version of go
+go version # verify the version of golang in the system
+```
+
+<hr>
+
+## NodeJS setup with [NVM](https://github.com/nvm-sh/nvm#install--update-script)
+
+#### *Step 1 - Install*
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
+
+#### *Step 2 - Set Path in `.bashrc` or `.profile` file*
+```bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
+#### *Step 3 - Use nvm commands to setup specific version of go*
+```bash
+nvm --version
+nvm ls-remote
+nvm use 16
+nvm ls
+nvm uninstall 16
+node --version
+npm --version
+```
+
+## neofetch, cpufetch, gdu setup
+
+#### *neofetch setup*
+```bash
+sudo apt install neofetch
+neofetch
+```
+
+#### *cpufetch setup*
+```bash
+sudo apt install cpufetch
+cpufetch
+```
+
+#### *gdu setup*
+```bash
+sudo apt install gdu
+gdu
+gdu -h
 ```
