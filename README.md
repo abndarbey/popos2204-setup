@@ -12,6 +12,11 @@ curl -sLk https://git.io/gobrew | sh -
 export PATH="$HOME/.gobrew/current/bin:$HOME/.gobrew/bin:$PATH"
 ```
 
+```
+export PATH="$HOME/.gobrew/current/bin:$HOME/.gobrew/bin:$PATH"
+export GOROOT="$HOME/.gobrew/current/go"
+```
+
 #### *Step 3 - Use gobrew commands to setup specific version of go*
 ```bash
 gobrew help
