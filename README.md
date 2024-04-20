@@ -21,10 +21,10 @@ export GOROOT="$HOME/.gobrew/current/go"
 ```bash
 gobrew help
 gobrew ls-remote # list all the available remote versions of go for installation
-gobrew use 1.16 # install and set a specific version of go
-gobrew install 1.16 # install a specific version of go
+gobrew use 1.22.2 # install and set a specific version of go
+gobrew install 1.22.2 # install a specific version of go
 gobrew ls # list all the available versions of go in the system
-gobrew uninstall 1.16 # uninstall a specific version of go
+gobrew uninstall 1.22.2 # uninstall a specific version of go
 go version # verify the version of golang in the system
 ```
 
@@ -47,9 +47,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 ```bash
 nvm --version
 nvm ls-remote
-nvm use 16
+nvm use 20
 nvm ls
-nvm uninstall 16
+nvm uninstall 20
 node --version
 npm --version
 ```
