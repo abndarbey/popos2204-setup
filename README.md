@@ -12,6 +12,7 @@ curl -sLk https://git.io/gobrew | sh -
 export PATH="$HOME/.gobrew/current/bin:$HOME/.gobrew/bin:$PATH"
 ```
 
+- ignore the below commands
 ```
 export PATH="$HOME/.gobrew/current/bin:$HOME/.gobrew/bin:$PATH"
 export GOROOT="$HOME/.gobrew/current/go"
