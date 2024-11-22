@@ -4,7 +4,7 @@
 
 #### *Step 1 - Install*
 ```bash
-curl -sLk https://git.io/gobrew | sh -
+curl -sL https://raw.githubusercontent.com/kevincobain2000/gobrew/master/git.io.sh | bash
 ```
 
 #### *Step 2 - Set Path in `.bashrc` or `.profile` file*
